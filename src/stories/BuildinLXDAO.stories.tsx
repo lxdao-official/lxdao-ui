@@ -8,7 +8,6 @@ export default {
   argTypes: {},
 };
 
-const Template = (args) => <BuildinLXDAO {...args} />;
+const Template = () => <BuildinLXDAO />;
 
 export const component = Template.bind({});
-component.args = {};
