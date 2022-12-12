@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook&&rm -rf docs&&mv storybook-static docs",
     "init-msw": "msw init public/",
     "postinstall": "npm run build-components",
     "build-components": "rm -rf dist&&cross-env BABEL_ENV=production babel src/components -d dist --extensions '.ts' --extensions '.tsx'"
