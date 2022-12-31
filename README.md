@@ -10,10 +10,16 @@ add components in `src/components`
 
 add story in `src/stories`
 
+## build
+
+```
+npm run build
+```
+
 ## publish
 
 ```
-npm run publish
+npm pack && npm publish --access public
 ```
 
 ## publish docs

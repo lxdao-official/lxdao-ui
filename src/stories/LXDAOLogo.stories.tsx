@@ -1,6 +1,6 @@
 import React from "react";
 
-import { LXDAOLogo } from "../components/LXDAOLogo";
+import LXDAOLogo from "../components/LXDAOLogo";
 
 export default {
   title: "Example/LXDAOLogo",
