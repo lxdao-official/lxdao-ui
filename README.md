@@ -1,7 +1,13 @@
-## use
+## How To Use
 
 ```
 npm install --save lxdao-ui
+
+import { LXDAOLogo, LXDAOIntroduction } from "lxdao-ui";
+
+<LXDAOLogo/>
+<LXDAOIntroduction/>
+
 ```
 
 ## dev
