@@ -59,28 +59,25 @@ const LXDAOIntroduction = ({
           <Typography
             textTransform="uppercase"
             color="#365AE2"
-            fontSize={12}
-            fontWeight={600}
             lineHeight="44px"
+            sx={{ fontWeight: "600 !important", fontSize: "12px !important" }}
           >
             Honor-produced by <LXDAOLogo height="16px" width="58.67px" />
           </Typography>
           <Typography
             textTransform="uppercase"
-            fontSize={44}
-            fontWeight={700}
             color="#141414"
             lineHeight="53px"
+            sx={{ fontWeight: "700 !important", fontSize: "44px !important" }}
           >
             LXDAO is an <HightlightText>R&amp;D</HightlightText>-
           </Typography>
           <Typography
             textTransform="uppercase"
-            fontSize={44}
-            fontWeight={700}
             color="#141414"
             lineHeight="53px"
             letterSpacing="0"
+            sx={{ fontWeight: "700 !important", fontSize: "44px !important" }}
           >
             focused DAO in Web3
           </Typography>
@@ -125,16 +122,28 @@ const LXDAOIntroduction = ({
         >
           <Title />
           <Box display={{ md: "block", sm: "none", xs: "none" }}>
-            <Typography fontSize={21} lineHeight="29px" color="#667085">
+            <Typography
+              sx={{ fontSize: "21px !important" }}
+              lineHeight="29px"
+              color="#667085"
+            >
               Our mission is bringing together buidlers to buidl and
             </Typography>
-            <Typography fontSize={21} lineHeight="29px" color="#667085">
+            <Typography
+              sx={{ fontSize: "21px !important" }}
+              lineHeight="29px"
+              color="#667085"
+            >
               maintain "LX" (Valuable) projects for Web3, in a sustainable
               manner.
             </Typography>
           </Box>
           <Box display={{ md: "none", sm: "block", xs: "block" }}>
-            <Typography fontSize={21} lineHeight="29px" color="#667085">
+            <Typography
+              sx={{ fontSize: "21px !important" }}
+              lineHeight="29px"
+              color="#667085"
+            >
               Our mission is bringing together buidlers to buidl and maintain
               "LX" (Valuable) projects for Web3, in a sustainable manner.
             </Typography>
