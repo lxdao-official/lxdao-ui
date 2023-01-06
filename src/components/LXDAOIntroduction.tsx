@@ -38,7 +38,7 @@ const CommunityLinkGroup = () => (
     <Link href="https://twitter.com/LXDAO_Official" target="_blank">
       <Box component={"img"} src={twitterCircle} />
     </Link>
-    <Link href="https://discord.com/invite/HtcDdPgJ7D" target="_blank">
+    <Link href="https://discord.lxdao.io" target="_blank">
       <Box component={"img"} src={discordCircle} />
     </Link>
     <Link href="https://forum.lxdao.io/" target="_blank">
