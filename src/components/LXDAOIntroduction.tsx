@@ -47,38 +47,18 @@ const CommunityLinkGroup = () => (
   </Box>
 );
 
-const LXDAOIntroduction = ({
-  maxWidth = '1216px',
-  xsWidth = '350px',
-  ...restProps
-}: any) => {
+const LXDAOIntroduction = ({ maxWidth = '1216px', xsWidth = '350px', titleColor = '#141414', detailColor = '#667085', ...restProps }: any) => {
   const Title = () => {
     return (
       <Box>
         <Box>
-          <Typography
-            textTransform="uppercase"
-            color="#365AE2"
-            lineHeight="44px"
-            sx={{ fontWeight: '600 !important', fontSize: '12px !important' }}
-          >
+          <Typography textTransform="uppercase" color="#365AE2" lineHeight="44px" sx={{ fontWeight: '600 !important', fontSize: '12px !important' }}>
             Honor-produced by <LXDAOLogo height="16px" width="58.67px" />
           </Typography>
-          <Typography
-            textTransform="uppercase"
-            color="#141414"
-            lineHeight="53px"
-            sx={{ fontWeight: '700 !important', fontSize: '44px !important' }}
-          >
+          <Typography textTransform="uppercase" color={titleColor} lineHeight="53px" sx={{ fontWeight: '700 !important', fontSize: '44px !important' }}>
             LXDAO is an <HightlightText>R&amp;D</HightlightText>-
           </Typography>
-          <Typography
-            textTransform="uppercase"
-            color="#141414"
-            lineHeight="53px"
-            letterSpacing="0"
-            sx={{ fontWeight: '700 !important', fontSize: '44px !important' }}
-          >
+          <Typography textTransform="uppercase" color={titleColor} lineHeight="53px" letterSpacing="0" sx={{ fontWeight: '700 !important', fontSize: '44px !important' }}>
             focused DAO in Web3
           </Typography>
         </Box>
@@ -99,61 +79,24 @@ const LXDAOIntroduction = ({
       textAlign="center"
       gap={{ lg: '120px', xs: '40px' }}
     >
-      <Box
-        display="flex"
-        flexDirection={{ md: 'row', xs: 'column-reverse' }}
-        gap={6}
-        alignItems="center"
-        textAlign="left"
-      >
-        <Box
-          crossOrigin="anonymous"
-          component={'img'}
-          width={{ xs: xsWidth, sm: 'auto' }}
-          src="https://api.lxdao.io/lxdao/lxdaoIntroduction"
-        />
-        <Box
-          display="flex"
-          flexDirection="column"
-          gap={4}
-          width={{ xs: xsWidth, sm: 'auto' }}
-          alignItems="flex-start"
-          textAlign="left"
-        >
+      <Box display="flex" flexDirection={{ md: 'row', xs: 'column-reverse' }} gap={6} alignItems="center" textAlign="left">
+        <Box crossOrigin="anonymous" component={'img'} width={{ xs: xsWidth, sm: 'auto' }} src="https://api.lxdao.io/lxdao/lxdaoIntroduction" />
+        <Box display="flex" flexDirection="column" gap={4} width={{ xs: xsWidth, sm: 'auto' }} alignItems="flex-start" textAlign="left">
           <Title />
           <Box display={{ md: 'block', sm: 'none', xs: 'none' }}>
-            <Typography
-              sx={{ fontSize: '21px !important' }}
-              lineHeight="29px"
-              color="#667085"
-            >
+            <Typography sx={{ fontSize: '21px !important' }} lineHeight="29px" color={detailColor}>
               Our mission is bringing together buidlers to buidl and
             </Typography>
-            <Typography
-              sx={{ fontSize: '21px !important' }}
-              lineHeight="29px"
-              color="#667085"
-            >
-              maintain "LX" (Valuable) projects for Web3, in a sustainable
-              manner.
+            <Typography sx={{ fontSize: '21px !important' }} lineHeight="29px" color={detailColor}>
+              maintain "LX" (Valuable) projects for Web3, in a sustainable manner.
             </Typography>
           </Box>
           <Box display={{ md: 'none', sm: 'block', xs: 'block' }}>
-            <Typography
-              sx={{ fontSize: '21px !important' }}
-              lineHeight="29px"
-              color="#667085"
-            >
-              Our mission is bringing together buidlers to buidl and maintain
-              "LX" (Valuable) projects for Web3, in a sustainable manner.
+            <Typography sx={{ fontSize: '21px !important' }} lineHeight="29px" color={detailColor}>
+              Our mission is bringing together buidlers to buidl and maintain "LX" (Valuable) projects for Web3, in a sustainable manner.
             </Typography>
           </Box>
-          <Box
-            width="100%"
-            display="flex"
-            justifyContent="space-between"
-            height="48px"
-          >
+          <Box width="100%" display="flex" justifyContent="space-between" height="48px">
             <Link
               target="_blank"
               href={`https://lxdao.io/joinus`}
@@ -181,8 +124,7 @@ const LXDAOIntroduction = ({
                   fontSize: '16px',
                   lineHeight: '24px',
                   fontWeight: '600',
-                  background:
-                    'linear-gradient(90deg, #305FE8 0%, #3AD9E3 100%)',
+                  background: 'linear-gradient(90deg, #305FE8 0%, #3AD9E3 100%)',
                 }}
               >
                 JOIN US
