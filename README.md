@@ -1,9 +1,9 @@
 ## How To Use
 
 ```
-npm install --save lxdao-ui
+npm install --save @lxdao/lxdao-ui
 
-import { LXDAOLogo, LXDAOIntroduction } from "lxdao-ui";
+import { LXDAOLogo, LXDAOIntroduction } from "@lxdao/lxdao-ui";
 
 <LXDAOLogo/>
 <LXDAOIntroduction/>

@@ -1,6 +1,6 @@
 {
-  "name": "lxdao-ui",
-  "version": "0.1.16",
+  "name": "@lxdao/lxdao-ui",
+  "version": "0.1.17",
   "description": "This library is made by a LXDAOLogo and a LXDAOIntroduction components.",
   "author": "Jackysense",
   "private": false,
@@ -24,7 +24,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "postpublish": "npm run build"
+    "postpublish": "npm run build",
+    "publish": "npm publish --access public"
   },
   "eslintConfig": {
     "extends": [
