@@ -127,7 +127,9 @@ const LXDAOIntroduction = ({ maxWidth = '1216px', xsWidth = '350px', titleColor 
                   background: 'linear-gradient(90deg, #305FE8 0%, #3AD9E3 100%)',
                 }}
               >
+                <Typography  >
                 JOIN US
+                </Typography>
               </Box>
             </Link>
             <CommunityLinkGroup />
