@@ -47,7 +47,7 @@ const CommunityLinkGroup = () => (
   </Box>
 );
 
-const LXDAOIntroduction = ({ maxWidth = '1216px', xsWidth = '350px', titleColor = '#141414', detailColor = '#667085', imgBackground = '%23fff', ...restProps }: any) => {
+const LXDAOIntroduction = ({ maxWidth = '1216px', xsWidth = '350px', titleColor = '#141414', detailColor = '#667085', imgBackground = '#fff', ...restProps }: any) => {
   const Title = () => {
     return (
       <Box>
@@ -80,7 +80,7 @@ const LXDAOIntroduction = ({ maxWidth = '1216px', xsWidth = '350px', titleColor 
       gap={{ lg: '120px', xs: '40px' }}
     >
       <Box display="flex" flexDirection={{ md: 'row', xs: 'column-reverse' }} gap={6} alignItems="center" textAlign="left">
-        <Box crossOrigin="anonymous" component={'img'} width={{ xs: xsWidth, sm: 'auto' }} src={`https://api.lxdao.io/lxdao/lxdaoIntroduction?background=${imgBackground}`} />
+        <Box crossOrigin="anonymous" component={'img'} width={{ xs: xsWidth, sm: 'auto' }} src={`https://api.lxdao.io/lxdao/lxdaoIntroduction?background=${imgBackground?.replace('#', '%23')}`} />
         <Box display="flex" flexDirection="column" gap={4} width={{ xs: xsWidth, sm: 'auto' }} alignItems="flex-start" textAlign="left">
           <Title />
           <Box display={{ md: 'block', sm: 'none', xs: 'none' }}>
